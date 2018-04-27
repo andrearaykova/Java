@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Created by andrearaykova on 9/29/17.
+ * Created by andrearaykova on 28.11.17.
  */
 public class ReverseCharacters {
     public static void main(String[] args) {
@@ -11,7 +11,9 @@ public class ReverseCharacters {
         String second = scanner.nextLine();
         String third = scanner.nextLine();
 
-        System.out.println(third + second + first);
-
+        String result = first + second + third;
+        StringBuilder reverse = new StringBuilder();
+        reverse.append(result).reverse();
+        System.out.println(reverse);
     }
 }
